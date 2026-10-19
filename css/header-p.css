@@ -1,0 +1,233 @@
+/* ESTRUTURA GERAL */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CABEÇALHO */
+.header-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.header-portfolio h1 {
+  color: #141a4b;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-container {
+  display: flex;
+  gap: 25px;
+  padding: 10px 30px;
+  background: #73ccf5;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid #000;
+  border-radius: 50px;
+  box-shadow: 0 6px 20px rgb(16, 26, 117);
+}
+
+.nav-container a {
+  color: #000000;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+}
+
+.nav-container a:hover {
+  color: #0a65ce;
+  background: #000000;
+  transform: translateY(-2px);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+.hero-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-texto h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-texto h1 span {
+  color: #2866ad;
+}
+
+.hero-texto p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.botao {
+  display: inline-block;
+  background: #57a5ee;
+  color: #14161a;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #0367a1;
+  transform: scale(1.05);
+}
+
+.hero-foto img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #000000;
+  box-shadow: 0 8px 25px rgb(9, 88, 153);
+}
+
+/* SEÇÕES E CARDS */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #060829;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.card {
+  background: #4dc2f0;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projeto {
+  flex: 1 1 250px;
+  background: #64cdf7;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+}
+
+.habilidades ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.habilidades li {
+  background: #21a9dfb6;
+  color: #000000;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* REDES SOCIAIS */
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.redes a {
+  font-size: 30px;
+  color: #000030;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #050505;
+  border-top: 1px solid rgb(5, 39, 114);
+}
+
+/* LIGHTBOX */
+#lightbox {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* BOTÃO TOPO */
+#topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #19aed3;
+  color: #030a4e;
+  border: 1px solid #020d72;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#topo:hover {
+  background: #4072fa;
+  color: #fff;
+  transform: scale(1.1);
+}
